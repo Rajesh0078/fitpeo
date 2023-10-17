@@ -20,9 +20,9 @@ const Home = () => {
                         <input type="text" className='align-middle outline-none ps-1' />
                     </div>
                 </div>
-                <div className='grid grid-cols-4 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-2 min-[368px]:grid-cols-2 min-[280px]:grid-cols-1 '>
+                <div className='grid grid-cols-4 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-2 min-[350px]:grid-cols-2 min-[280px]:grid-cols-1 '>
                     <div className='col-span-1 h-[10rem] px-3 rounded-xl bg-white shadow_x flex justify-around items-center'>
-                        <BiDollarCircle fill='green' className='bg-green-200 p-4 rounded-full h-[7rem] w-[7rem]' />
+                        <BiDollarCircle fill='green' className='bg-green-200 p-4 rounded-full h-[7rem] w-[7rem] ' />
                         <div className='ms-3'>
                             <p className='text-sm text-slate-400'>Earning</p>
                             <p className='text-md font-bold'>$198K</p>

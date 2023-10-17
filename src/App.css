@@ -98,4 +98,17 @@ html {
     html {
         font-size: 55%;
     }
+
+    .piey {
+        --w: 120px
+    }
+
+    .pie {
+        --w: 120px
+    }
+
+    .piex {
+        --w: 120px;
+        --b: 25px
+    }
 }
