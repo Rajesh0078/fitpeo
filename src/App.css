@@ -84,6 +84,9 @@
     mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
 
+html {
+    overflow-x: hidden;
+}
 
 @media screen and (max-width:780px) {
     html {
