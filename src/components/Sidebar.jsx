@@ -10,7 +10,7 @@ const Sidebar = () => {
         <div className='py-4 px-3 bg-[#1c265f] w-[17%] h-[100vh]'>
             <div className='flex items-center gap-1'>
                 <HiViewGrid fill='white' size={30} />
-                <p className='font-medium text-white'>Dashboard</p>
+                <p className='font-medium text-white max-[480px]:hidden'>Dashboard</p>
             </div>
             <div className='mt-5 text-gray-100 '>
                 <NavLink to={'/'} className=" p-2 flex items-center rounded-md mb-1">
