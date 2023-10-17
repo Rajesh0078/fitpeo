@@ -253,7 +253,7 @@ const ProductsellHome = () => {
                 <div className='flex gap-5'>
                     <div className='bg-gray-100 px-2 py-1 ms-2'>
                         <FiSearch className='inline align-middle ' />
-                        <input type="text" className='align-middle bg-gray-100 outline-none ps-1' />
+                        <input type="text" className='align-middle bg-gray-100 outline-none ps-1 max-[480px]:hidden' />
                     </div>
                     <select name="term" id="term" className='border border-gray-400 py-1 text-sm outline-none px-1'>
                         <option value="Quarterly">Last 30 Days</option>
@@ -266,26 +266,26 @@ const ProductsellHome = () => {
                 <div className='flex justify-between border-b border-gray-300 pb-2'>
                     <p className='text-gray-500'>Product Name</p>
                     <div>
-                        <span className='mx-8 text-gray-500'>Stock</span>
-                        <span className='mx-8 text-gray-500'>Price</span>
-                        <span className='mx-8 text-gray-500'>Total Sales</span>
+                        <span className='mx-8 text-gray-500 max-[480px]:mx-2'>Stock</span>
+                        <span className='mx-8 text-gray-500 max-[480px]:mx-3'>Price</span>
+                        <span className='mx-8 text-gray-500 max-[480px]:mx-2'>Total Sales</span>
                     </div>
                 </div>
                 <div className='h-[24rem] overflow-auto'>
                     {
                         data.map((i, index) => {
                             return <div key={index} className='flex justify-between items-center mt-2 pb-2 '>
-                                <div className='flex items-center gap-4'>
-                                    <img src="https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg" alt='aha' className='h-[3rem] w-[4rem] rounded-lg' />
+                                <div className='flex items-center gap-4 max-[480px]:flex-col max-[480px]:items-start max-[480px]:w-[11rem]'>
+                                    <img src="https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg" alt='aha' className='h-[3rem] w-[4rem] rounded-lg max-[480px]:hidden' />
                                     <div >
                                         <p className='font-bold'>{i.name}</p>
                                         <p className='text-gray-400'>{i.descr}</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <span className='mx-1 text-black'>{i.stock} in stock</span>
-                                    <span className='mx-11  font-bold text-black'>{i.price}</span>
-                                    <span className='mx-9 text-black'>{i.sales}</span>
+                                    <span className='mx-1 text-black max-[480px]:mx-2'>{i.stock}<span className='max-[480px]:hidden'> in stock</span> </span>
+                                    <span className='mx-11  font-bold text-black max-[480px]:mx-2'>{i.price}</span>
+                                    <span className='mx-9 text-black max-[480px]:mx-2'>{i.sales}</span>
                                 </div>
                             </div>
                         })
