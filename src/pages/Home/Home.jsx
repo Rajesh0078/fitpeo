@@ -1,25 +1,18 @@
 import React from 'react'
-import { GiHand } from "react-icons/gi"
-import { FiSearch } from "react-icons/fi"
 import { BiDollarCircle } from "react-icons/bi"
 import { BsFillHandbagFill } from "react-icons/bs"
 import { GrNotes } from "react-icons/gr"
 import { MdOutlineAccountBalanceWallet } from "react-icons/md"
 import Overview from '../../components/Overview'
 import ProductsellHome from '../../components/ProductsellHome'
+import Header from '../../components/Header'
 
 
 const Home = () => {
     return (
         <>
-            <div className='w-full px-8 py-3 '>
-                <div className='flex justify-between items-center'>
-                    <p>Hello Shahrukh<GiHand className='inline ms-2' /></p>
-                    <div className='bg-white px-2 py-1'>
-                        <FiSearch className='inline align-middle ' />
-                        <input type="text" className='align-middle outline-none ps-1' />
-                    </div>
-                </div>
+            <div className='w-full px-8 py-3'>
+                <Header />
                 <div className='grid grid-cols-4 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-2 min-[350px]:grid-cols-2 min-[280px]:grid-cols-1 '>
                     <div className='col-span-1 h-[10rem] px-3 rounded-xl bg-white shadow_x flex justify-around items-center'>
                         <BiDollarCircle fill='green' className='bg-green-200 p-4 rounded-full h-[7rem] w-[7rem] ' />

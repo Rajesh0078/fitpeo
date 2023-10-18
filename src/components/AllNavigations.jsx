@@ -12,7 +12,7 @@ const AllNavigations = () => {
     return (
         <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/product' element={<Product />}></Route>
+            <Route path='/products' element={<Product />}></Route>
             <Route path='/customers' element={<Customers />}></Route>
             <Route path='/income' element={<Income />}></Route>
             <Route path='/promote' element={<Promote />}></Route>

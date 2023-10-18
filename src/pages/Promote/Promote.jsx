@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../../components/Header'
 
 const Promote = () => {
     return (
-        <div>Promote</div>
+        <div className='w-full px-8 py-3 '>
+            <Header />
+        </div>
     )
 }
 

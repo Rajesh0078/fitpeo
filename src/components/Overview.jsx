@@ -59,7 +59,7 @@ const Overview = () => {
             <div className='col-span-2 shadow_x h-[20rem] rounded-xl bg-white  px-5 py-4 md:col-span-3 lg:col-span-2 sm:col-span-3 min-[280px]:col-span-3'>
                 <div className='flex justify-between items-center'>
                     <p className='font-semibold'>Overview</p>
-                    <select name="term" id="term" className='border py-1 text-sm outline-none px-1'>
+                    <select name="term" id="termx" className='border py-1 text-sm outline-none px-1'>
                         <option value="Quarterly">Quarterly</option>
                         <option value="Half-yearly">Half-yearly</option>
                         <option value="Yearly">Yearly</option>
