@@ -283,7 +283,7 @@ const Product = () => {
                     </div>
                 </div>
             </div>
-            <div className='h-[20rem] w-full border mt-6 bg-white rounded-xl px-5 py-4'>
+            <div className='h-[20rem] w-full border mt-6 bg-white rounded-xl px-5 py-4 max-[450px]:h-[44rem] max-[630px]:h-[35rem] '>
                 <div className='flex items-center justify-between'>
                     <p className='font-bold'>Product Sell</p>
                     <div className='flex gap-5'>
@@ -307,7 +307,7 @@ const Product = () => {
                             <span className='mx-8 text-gray-500 max-[480px]:mx-2'>Total Sales</span>
                         </div>
                     </div>
-                    <div className='h-[12rem] overflow-auto'>
+                    <div className='h-[13rem] overflow-auto max-[350px]:h-[35rem] '>
                         {
                             data.map((i, index) => {
                                 return <div key={index} className='flex justify-between items-center mt-2 pb-2 '>
