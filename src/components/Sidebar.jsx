@@ -9,8 +9,13 @@ import { NavLink } from "react-router-dom"
 const Sidebar = () => {
     return (
         <div className='py-4 px-3 bg-[#1c265f] w-[17%] h-[100vh]'>
+<<<<<<< HEAD
             <div className='flex items-center gap-1 '>
                 <MdSettingsInputAntenna fill='white' size={30} className='text-white mx-1' />
+=======
+            <div className='flex items-center gap-1'>
+                <HiViewGrid fill='white' size={30} />
+>>>>>>> c7987f9f157ae15f2360275a0974daa07758f9b4
                 <p className='font-medium text-white max-[480px]:hidden'>Dashboard</p>
             </div>
             <div className='mt-5 text-gray-100 '>
